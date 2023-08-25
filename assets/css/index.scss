@@ -1,0 +1,30 @@
+@import "./globalStyles";
+@import "./variables";
+@import "./header";
+@import "./home";
+@import "./about";
+@import "./services";
+@import "./portfolio";
+@import "./contact";
+@import "./footer";
+
+* {
+    @include globalStyles();
+}
+
+:root {
+    @include variables();
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+section {
+    @include sectionConfig();
+}

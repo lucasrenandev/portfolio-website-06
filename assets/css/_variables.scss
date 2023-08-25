@@ -1,0 +1,33 @@
+$textColor: #fff;
+$bgColor: #1b1f24;
+$secondBgColor: #22282f;
+$mainColor: #13bbff;
+$otherColor: #c3cad5;
+$h1Font: 4.5rem;
+$h2Font: 2.9rem;
+$pfont: 1rem;
+
+@mixin variables() {
+    --text-color: #{$textColor};
+    --bg-color: #{$bgColor};
+    --second-bg-color: #{$secondBgColor};
+    --main-color: #{$mainColor};
+    --other-color: #{$otherColor};
+    --h1-font: #{$h1Font};
+    --h2-font: #{$h2Font};
+    --p-font: #{$pfont};
+    @media (max-width: 1180px) {
+        --h1-font: 3.5rem;
+        --h2-font: 2.5rem;
+        --p-font: 15px;  
+    }
+    @media (max-width: 600px) {
+        --h1-font: 3rem;
+        --h2-font: 2rem;    
+    }
+    @media (max-width: 355px) {
+        --h1-font: 2.5rem;
+        --h2-font: 1.9rem;
+        --p-font: 14px;
+    }
+}

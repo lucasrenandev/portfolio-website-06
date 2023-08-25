@@ -1,0 +1,28 @@
+footer {
+    background-color: var(--second-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 22px 7%;
+}
+
+.copyright p {
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: var(--other-color);
+    line-height: 25px;
+}
+
+footer a i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background-color: #075fe4;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 30px;
+}
