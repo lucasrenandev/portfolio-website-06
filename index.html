@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/index.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 </head>
 <body>
     <!---------------------------Header------------------------------>
@@ -28,7 +29,7 @@
 
     <!---------------------------Home section------------------------------>
     <section class="home" id="home">
-        <main class="home-text">
+        <main class="home-text" data-aos="fade-in">
             <h3>Hi, there!</h3>
             <h1>I'm <span>Tahmid Hamim</span></h1>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit consequatur minima accusantium illo! Expedita rem consequuntur autem!</p>
@@ -47,10 +48,10 @@
 
     <!---------------------------About section------------------------------>
     <section class="about" id="about">
-        <figure class="about-image">
+        <figure class="about-image" data-aos="zoom-in-down">
             <img src="assets/img/about.jpg" alt="About image">
         </figure><!--end about image-->
-        <main class="about-text">
+        <main class="about-text" data-aos="zoom-in-up">
             <h2>I am Product <span>Designer</span> <br> & Web Developer</h2>
             <div class="experience-area">
                 <p>
@@ -84,10 +85,10 @@
 
     <!---------------------------Services section------------------------------>
     <section class="services" id="services">
-        <header class="center-text">
+        <header class="center-text" data-aos="fade-down">
             <h2>My <span>Services</span></h2>
         </header><!--end center text-->
-        <main class="services-content">
+        <main class="services-content" data-aos="zoom-in-up">
             <div class="service-box">
                 <img src="assets/img/s-1.svg" alt="Service image 1">
                 <h4>UI/UX Design</h4>
@@ -120,10 +121,10 @@
 
     <!---------------------------Portfolio section------------------------------>
     <section class="portfolio" id="portfolio">
-        <header class="center-text">
+        <header class="center-text" data-aos="fade-down">
             <h2>My <span>Portfolio</span></h2>
         </header><!--end center text-->
-        <main class="portfolio-content">
+        <main class="portfolio-content" data-aos="zoom-in-up">
             <div class="portfolio-box">
                 <img src="assets/img/port-1.jpg" alt="Portfolio image 1">
                 <div class="main-box">
@@ -177,10 +178,10 @@
 
     <!---------------------------Contact section------------------------------>
     <section class="contact" id="contact">
-        <header class="center-text">
+        <header class="center-text" data-aos="fade-down">
             <h2>Contact <span>Me</span></h2>
         </header><!--end center text-->
-        <main class="contact-content">
+        <main class="contact-content" data-aos="zoom-in">
             <form action="#">
                 <input type="text" placeholder="Your name" required>
                 <input type="email" placeholder="Email address" required>
@@ -202,5 +203,12 @@
 
     <!---------------------------JavaScript links------------------------------>
     <script src="assets/js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 1400
+        });
+    </script>
 </body>
 </html>
